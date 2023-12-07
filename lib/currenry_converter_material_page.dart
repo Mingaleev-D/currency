@@ -16,7 +16,12 @@ class _CurrencyConverterMaterialPageFulStateState
   @override
   void initState() {
     super.initState();
-    // Add code after super
+  }
+
+  @override
+  void dispose() {
+    textEditingController.dispose();
+    super.dispose();
   }
 
   @override
